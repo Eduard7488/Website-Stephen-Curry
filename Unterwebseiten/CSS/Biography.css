@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box; /*Damit man weiß, wie was berechnet wird*/
+    text-decoration: none; /*Damit die Unterlinie vom Hyperlink weg ist*/
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Für ein schönes Scrollgefühl beim z.B Top Button*/
+}
+
+header {
+    display: flex; /*Damit man den Kontent, auf der Seite einfacher bearbeiten können*/
+    flex-direction: column; /*Damit man weiß, in welche Richtung der Kontent geht*/
+    align-items: center; /*Alles in die Mitte Zentrieren*/
+    text-align: center; /*Alles in die Mitte Zentrieren*/
+}
+
+table {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.header-content {
+    max-width: 612px; /*Maximale Breite*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content h1 {
+    text-align: left; /* Links ausrichten */
+}
+
+.main {
+    display: block; /*Als Block darstellen*/
+    margin-block-start: 1em; /*Damit spricht man den Block an, indem falle display block */
+    margin-block-end: 1em; /*Damit definiert man das Ende*/
+    margin-inline-start: 0px; /*Damit nur der Text augewählt wird*/
+    margin-inline-end: 0px; /*Damit nur der Text augewählt wird*/
+    text-align: center; /*Text in die Mitte Zentrieren*/
+}
+
+
+.footer-box a {
+    color: black; /*Farbe auf schwarz*/
+    padding-right: 10px; /*Damit es genug Abstand rechts hat*/
+    font-size: large; /*Damit man auch den text lesen kann*/
+}
+
+.footer-box {
+    color: #000000;
+}
+
+.footer-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-box p {
+    display: inline-block;
+    /* Inline-Block-Elemente verwenden, um die vertikale Ausrichtung zu steuern */
+    vertical-align: middle; /* Text in der Mitte zentrieren */
+    padding-right: 20px;
+}
+
+.SchnellAuswahl a {
+    color: black;
+    text-decoration: underline;  /*Damit man weiß, dass man das anklicken kann*/
+    transition: color 0.5s ease; /*Wenn man auf den Button, geht dann soll es eine smoothe Animation geben wird, mit Hover kombiniert*/
+}
+
+
+.SchnellAuswahl {
+    padding: 15px;
+    text-align: left;
+    border: thin solid #CDCDCD;
+    border-radius: 0%;
+    display: inline-block;
+    width: 612px;
+}
+
+main {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;     
+}
+
+.Ueberschriften p {
+    color: grey;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    padding-left: 100px;
+}
+
+.Ueberschriften h1 {
+    font-size: 2.75rem;
+    line-height: 1.1;
+}
+
+
+.bild {
+    margin-bottom: 30px;
+    width: 612px;
+    height: 612px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-Anfang {
+    margin-top: 20px;
+    clear: both;
+}
+
+.punkteZumAnklicken {
+    list-style-type: disc;
+    margin-right: 20px;
+    justify-content: left;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.text-Anfang h2 {
+    margin: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.text-Anfang p {
+    margin: 0 auto;
+    text-align: left;
+    width: 612px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.faktenFuerStyle { /*Damit die Fakten von einer Border umrandet werden und damit sie mit dem Bild alignt wird*/
+    border: 2px;
+    border-style: solid; 
+    font-weight: 600;
+    padding: 1.25rem;
+    text-align: left;
+    width: 612px;
+}
+
+
+#hochZuAnfang {  /*Farbe schwarz und transistion um eine smoothen Übergang zu erreichen von 0.5s*/
+    color: black;
+    transition: color 0.5s ease;
+}
+
+#hochZuAnfang:hover {  /*Wenn man über den Button geht, soll er diese Farbe haben*/
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#Impressum {  /*Ist als ID, da ich es sonst nicht bei der Schnellnavigation ansprechen kann gilt auch für alle anderen ID-Elemente. Hier passiert das gleiche wie bei hochZuAnfang*/
+    color: black;
+    transition: color 0.5s ease;
+}
+
+#Impressum:hover {  /*Wiederholung von oben*/
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#mehrInhalte {
+    color: black;
+    transition: color 0.5s ease;
+}
+
+#mehrInhalte:hover {
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.SchnellAuswahl a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-Anfang .faktenFuerStyle {  /*Hier stelle ich die ELemente so ein, dass sie beim Bild Anfangen und dann auch enden, wenn das Bild enden*/
+    width: 100%;
+    max-width: 612px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem;
+    border: 2px solid #000000;
+    font-family: Gilroy, Gilroy-roboto, Gilroy-local, Helvetica, Arial, Sans-serif;
+    font-weight: 600;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.SchnellAuswahl a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-Anfang .fakten-sportler {  /*Damit die Üeberschriften mit dem Bildanfang alignt wird, gilt auch für alle unteren Sachen*/
+    padding-right: 520px;
+    margin-top: 10px;
+}
+
+.text-Anfang .leben-jung {
+    padding-right: 315px; 
+    margin-top: 10px;
+}
+
+.text-Anfang .leben-heute {
+    padding-right: 430px;
+    margin-top: 10px;
+}
+
+
+.text-Anfang .faktenFuerStyle {
+    width: 880px;
+    padding: 15px;
+    border-radius: 0%;
+    display: inline-block;
+    width: 612px;
+}
+
+.nameVomSportler {
+    margin-top: 2rem;
+}
+
+.Ueberschriften .nameVomSportler {
+    margin-right: 330px;
+}
+
+.Ueberschriften .erklaerungVomSportler {
+    margin-bottom: 40px;
+    margin-right: 168px;
+}
+
+.text-Anfang .wer-ist-stephen-curry {
+    padding-right: 300px; 
+ }
+
+.text-Anfang .College-Karriere {
+    margin-right: 382px;
+}
+
+.text-Anfang .Professionelle-Karrier {
+    margin-right: 305px;
+}
+
+.text-Anfang .Eherungen-und-Preise {
+    margin-right: 313px;
+}
+
+.text-Anfang .Andere-Sportarten {
+    margin-right: 346px;
+}
+
+.text-Anfang .Zelebrierung {
+    margin-right: 393px;
+}
+
+.text-Anfang .Zitate {
+    margin-right: 527px;
+}
+
+.text-Anfang .Gewinne {
+    margin-right: 485px;
+}
+
+.text-Anfang .Professionelle-Karriere {
+    margin-right: 286px;
+}

@@ -1,0 +1,108 @@
+* {
+    /*Margin, padding damit es sich alleine mit den Abständen anpasst und box sizing damit */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*Damit man nicht mehr scrollen kann*/
+    overflow: hidden;
+}
+
+main
+
+/*Farbe*/
+    {
+    background-color: rgb(200, 210, 220);
+}
+
+.Seitentext
+
+/*Damit das richtig alignt wird*/
+    {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Einfuehrungstext
+
+/*Damit es richtig angezeigt wird*/
+    {
+    margin: 10%;
+    margin-top: 10%;
+
+}
+
+.Ueberschrift
+
+/*Für eine coole überschrift*/
+    {
+    font-size: 410%;
+    line-height: 90%;
+    margin-bottom: 5%;
+}
+
+
+.punktRechts
+/*Style für die Punkte*/
+    {
+    position: absolute;
+    top: 43vh;
+    scale: 0.5;
+    left: 162vh;
+}
+
+.punktLinks {
+    /*Die kleinen Punkten, damit die Seite cool aussieht*/
+    position: absolute;
+    /*Damit die Punkte auch immer da bleiben*/
+    top: 43vh;
+    scale: 0.5;
+    left: -17vh;
+    z-index: 1;
+}
+
+.stephenCurry {
+    /*Ist nicht für alle Screens optimiert bzw Responsive*/
+    height: 0%;
+    width: 50%;
+    z-index: 20;
+    position: relative;
+    top: 0vh;
+}
+
+.zweiWoerter {
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+    /* Gradientenfarbe */
+    -webkit-background-clip: text;
+    /* Hintergrundclip für Webkit-Browser */
+    background-clip: text;
+    /* Hintergrundclip */
+    color: transparent;
+    /* Textfarbe transparent machen */
+}
+
+.erstenZweiWoerter {
+    color: transparent;
+    background-image: url("/Bilder/back.png");
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+p {
+    line-height: 30px;
+    font-size: x-large;
+    color: rgb(51, 51, 51);
+    position: relative;
+    z-index: 20;
+}
+

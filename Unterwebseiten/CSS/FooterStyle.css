@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-box {  /*Style für den Footer, selbsterklärend*/
+    background-color: #f2f7f2;
+    color: grey;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-box a {  /*Damit man auch die Links erkennt*/
+    color: gray;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: large;
+    transition: 0.5s color ease;
+}
+
+.footer-box a:hover {  /*Wenn man drauf geht dass die Farbe smooth zu schwarz wird*/
+    color: #000000;
+    transition: 0.5s color ease;
+}

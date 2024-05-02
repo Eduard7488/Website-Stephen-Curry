@@ -1,0 +1,132 @@
+* /*Seiten style*/ {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body /*Damit man den ganzen Body auswählt*/ {
+   font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.logo /*Damit man einen Pointer aufm logo hat*/ {
+    width: 120px;
+    cursor: pointer;
+}
+
+caption /*Stellt die Werte für die Caption ein*/ {
+    background: #323232;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+table /*Hier wird der Style der Tabelle eingestellt*/{
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    background-color: #323232;
+    border-collapse: collapse;    
+    justify-items: center;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+}
+
+th, td  /*damit es übersichtlicher ist*/{
+    padding: 1rem;
+}
+
+th /*Für table head*/{
+    background: #323232; /* Season, Team, usw*/
+}
+
+tr:nth-of-type(2n) /*Hiermit wird jede 2te Reihe ausgewählt*/{
+    background: hsl(0, 0%, 40%); 
+}
+
+
+.dropdown-menu a /*Damit man weiß dass es sic hier um links handelt*/ {
+    cursor: pointer;
+}
+
+.dropdown-menu a:hover /*Damit beim hovern ein andere Style kommt*/{
+    transition: 0.5s;
+    color: #323232;
+}
+
+.wrapper /*style für alle sachen in der statistik*/ {
+    margin-inline: auto;
+    align-items: center;
+    display: inline-block;
+    padding:   50px;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.dropdown /*Bootstrap vorlage*/ {
+    display: block;
+    position: absolute;
+    top: 100%;
+    align-items: center;
+    margin: 0;
+    display:block;
+    margin-left: 48em;
+}
+
+.dropdown ul/*Bootstrap vorlage*/ {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown ul li /*Bootstrap vorlage*/{
+    width: 150px;
+    padding: 10px;
+}
+
+.teamsWoErWar/*Damit nur beim klick des buttons angezeigt wird*/ {
+    display: none;
+}
+
+.vergleichZuAnderen/*Damit nur beim klick des buttons angezeigt wird*/ {
+    display: none;
+}
+
+.wurfqouteAnzeigen img /*Damit das bild korrekt angezeigt wird*/ {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 3em;
+}
+
+.wurfqouteAnzeigen /*Standardmäsig aus damit man sie nur beim anklicken der buttons sieht, gilt für alles mit display none*/ {
+    display: none;
+}
+
+.wrapper h1 /*Überschrfiten centernv*/ {
+    text-align: center;
+}
+
+.erklaerungVonDenBegriffen /*Damit die Erklärungen direkt unter der Tabelle angezeigt werden*/ {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    background-color: #323232;
+    margin-left: 27%;
+    border-radius: 20px;
+    margin-right: 25%;
+    color: white;
+    padding-top: 3%;
+    margin-bottom: 2%;
+}
+
+.erklaerungVonDenBegriffenPartZwei /*Damit es korrekt angezeigt wird*/{
+    display: inline-block;
+}

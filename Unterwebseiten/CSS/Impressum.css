@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    background-image: url('https://media.gettyimages.com/id/1013918710/de/foto/kolonnade-abstand-reihe-der-klassischen-steins%C3%A4ulen-hintergrund-mit-kopie.jpg?s=612x612&w=gi&k=20&c=d_pLzpKs_rB9vAeOn8Kvk6ghD8mXBIhRIx_wjUcP_XE=');
+    background: no-repeat;
+}
+
+.rechte {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    text-wrap:wrap;
+    float: left;
+    width: 45%;
+    background-color: #967d6940;
+    margin: 3%;
+    padding: 1.25rem;
+
+}
+
+.impressum {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    text-wrap: wrap;
+    float: right;
+    width: 45%;
+    margin-top: 5%;
+    margin-right: 3%;
+    background-color: #967d6940;
+    padding: 1.25rem;
+}
+
+header h1  /*Header und h1 style*/ {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 4em;
+}
+
+.impressum h2 {
+    padding-top: 1.5%;
+}
+
+ h1 {
+
+    text-wrap: stable;
+}
+    
+#Gebauede {
+    position: absolute;
+    right: 22.5%;
+    top: 30%;
+}
+
+#Datenbank {
+    position: absolute;
+    left: 22.5%;
+    top: 30%;
+}

@@ -1,0 +1,20 @@
+* /*Globaler Style, für alle Folien definiert Style und soweiter*/{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+    animation-name: fade-down;
+    animation-duration: 1s;
+}
+
+@keyframes fade-down /*Hier wird der Smoothe Effekt der Seite eingeführt*/{
+    0%    {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        }
+    }

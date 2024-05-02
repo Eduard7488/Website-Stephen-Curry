@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktseite</title>
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/Kontaktseite.css">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/styleglobal.css">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/NavbarStyle.css">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/FooterStyle.css">
+    <link rel="shortcut icon" href="/Bilder/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+  <nav class="navbar-main"> <!--Die Oberklasse für die Navbar-->
+    <div class="navbar">
+      <img src="https://1000logos.net/wp-content/uploads/2021/05/Stephen-Curry-logo.png" class="logo"></h2>
+      <ul> <!--a Tags für Navbar-->
+        <li><a href="/index.html">Home</a></li> 
+        <li><a href="/Unterwebseiten/HTML/Biography.html">Biographie</a></li>
+        <li><a href="/Unterwebseiten//HTML/Gallery.html">Gallerie</a></li>
+        <li><a href="/Unterwebseiten//HTML/Statistiken.html">Statistiken</a></li>
+        <li><a href="/Unterwebseiten/HTML/Impressum.html">Impressum und Rechtliches</a></li>
+        <li><a href="/Unterwebseiten//HTML/Kontaktseite.html" class="nav-selected">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container"><!--Container für das ganez Kontaktformular-->
+        <form>
+            <h1>Kontatkiere mich</h1>
+            <input type="text" id="Vorname" placeholder="Vorname" required> <!--Platzhalter, type um auf Text zu begrenzen und ID für Javascript. Required damit die nicht leer sein können-->
+            <input type="text" id="Nachname" placeholder="Nachname" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="Telefonnummer" placeholder="Telefonnummer" required>
+            <h4>Deine Nachricht... </h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button"> <!--Absende Knopf funktioniert nicht-->
+        </form>
+    </div>
+
+    <footer><!--Footer wie vorhin-->
+      <div class="footer-box">
+          <p>All rights reserved 2023 Stephen Curry Fanpage ™</p>
+          <p style="margin-top: 2px;">Powered by Eduard</p>
+      </div>
+  </footer>
+</body>
+</html>

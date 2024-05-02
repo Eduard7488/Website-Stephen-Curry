@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/Statistiken.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="/Unterwebseiten/JavaScript/Statistiken.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/NavbarStyle.css">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/styleglobal.css">
+    <link rel="stylesheet" href="/Unterwebseiten/CSS/FooterStyle.css">
+    <link rel="shortcut icon" href="/Bilder/favicon.ico" type="image/x-icon">
+    <title>Statistiken</title>
+</head>
+
+<body>
+
+    <nav class="navbar-main"> <!--Die Oberklasse für die Navbar-->
+        <div class="navbar">
+          <img src="https://1000logos.net/wp-content/uploads/2021/05/Stephen-Curry-logo.png" class="logo"></h2>
+          <ul> <!--a Tags für Navbar-->
+            <li><a href="/index.html">Home</a></li> 
+            <li><a href="/Unterwebseiten/HTML/Biography.html">Biographie</a></li>
+            <li><a href="/Unterwebseiten//HTML/Gallery.html">Gallerie</a></li>
+            <li><a href="#" class="nav-selected">Statistiken</a></li>
+            <li><a href="/Unterwebseiten/HTML/Impressum.html">Impressum und Rechtliches</a></li>
+            <li><a href="/Unterwebseiten/HTML/Kontaktseite.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <header>
+
+    </header>
+
+    <main>
+        <!--Wrapper um alle Daten in einem container zu haben-->
+        <div class="wrapper" id="wrapper">
+            <h1>Statistiken</h1>
+
+            <div class="dropdown"> <!--Dropdown von Bootstrap-->
+                <!--Style musste rein wegen Bootstrap, ich entschuldige mich im vorraus-->
+                <button style="margin-bottom: 16px;" class="btn btn-secondary dropdown-toggle" type="button" 
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tabellenauswahl</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="statistikSpielerAnzeigen()">Statistik</a> <!--Javascript funktion um Kontent anzuzeigen oder nicht anzuzeigen -->
+                    <a class="dropdown-item" onclick="teamsAnzeigen()">Teams</a>
+                    <a class="dropdown-item" onclick="wurfqouteAnzeigen()">Wuerfe</a>
+                </div>
+            </div>
+
+            <table>
+
+                <caption> <!--Damit man weiß worum es sich handelt-->
+                    Durchschnittswerte von den Seasons
+                </caption>
+
+                <tr> <!--Wichtige Daten über den Spieler-->
+                    <th >Season</th>
+                    <th >Team</th>
+                    <th >GP</th>
+                    <th >Min</th>
+                    <th >FG</th>
+                    <th >FG%</th>
+                    <th >3PT</th>
+                    <th >3P%</th>
+                    <th >FT</th>
+                    <th >FT%</th>
+                    <th >Reb</th>
+                </tr>
+
+                <tr >
+                    <td  data-cell="Season">2013/2014</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team indem er Spielt-->
+                    <td  data-cell="Games-Played">78</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">36.5</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">17.7</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">47.1</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">7.9</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">42.4</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.5</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">88.5</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">24</td> <!-- Points per Game -->
+                </tr>
+
+                <tr >
+                    <td  data-cell="Season">2014/2015</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">80</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">32.7</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">16.8</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">48.7</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">8.1</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">44.3</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.2</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">91.4</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">23.8</td> <!-- Points per Game -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2015/2016</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">79</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">34.2</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">20.2</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">50.4</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">11.2</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">45.4</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">5.1</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">90.8</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">30.1</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2016/2017</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">79</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">33.4</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">18.3</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">46.8</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">10</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">41.1</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.6</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">89.8</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">25.3</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2017/2018</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">51</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">32</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">16.9</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">49.5</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">9.8</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">42.3</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">5.9</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">92.1</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">26.4</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2018/2019</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">80</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">69</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">19.4</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">47.2</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">11.7</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">43.7</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.2</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">91.6</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">27.3</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2019/2020</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">5</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">27.8</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">16.4</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">40.2</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">9.8</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">24.5</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">5.2</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">100</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">20.8</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr > 
+                    <td  data-cell="Season">2020/2021</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">63</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">34.2</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">21.7</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">48.2</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">12.7</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">42.1</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">6.3</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">91.6</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">32</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2021/2022</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">64</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">36.2</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">19.1</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">43.7</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">11.7</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">38</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.7</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">92.3</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">25.5</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2022/2023</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">56</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">34.7</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">20.2</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">49.3</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">11.4</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">42.7</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">5</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">91.5</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">29.4</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+
+
+                <tr >
+                    <td  data-cell="Season">2023/2024</td>
+                    <td  data-cell="Team">Golden State Warriors</td>
+                    <td  data-cell="Games-Played">74</td> <!-- Games Played-->
+                    <td  data-cell="Minutes-Played">32.7</td> <!--Minutes Played-->
+                    <td  data-cell="Field-goals-made">19.5</td> <!--Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Field-goal-percentage">45</td> <!--Field Goal Percentage-->
+                    <td  data-cell="Threepoint-throw-percentage">11.8</td> <!-- 3-Point Field Goal Percentage -->
+                    <td  data-cell="Threepoint-throw-made">40.8</td> <!-- 3-Point Field Goals Made-Attempted Per Game-->
+                    <td  data-cell="Free-throws-made">4.4</td> <!-- FT:Free Throws Made-Attempted Per Game -->
+                    <td  data-cell="Free-throw-percentage">92.3</td> <!-- FT%:Free Throw Percentage -->
+                    <td  data-cell="Points-per-game">26.4</td> <!-- FT%:Free Throw Percentage -->
+                </tr>
+            </table>
+        </div>
+        
+
+        <div class="teamsWoErWar" id="teamsWoErWar"> <!--Neue Statistik bzw Tabelle-->
+            <div class="dropdown">
+                <button style="margin-left: 176%;" class="btn btn-secondary dropdown-toggle" type="button" 
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tabellenauswahl</button>
+                <div style="margin-left: 50%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="statistikSpielerAnzeigen()">Statistik</a>
+                    <a class="dropdown-item" onclick="teamsAnzeigen()">Teams</a>
+                    <a class="dropdown-item" onclick="wurfqouteAnzeigen()">Wuerfe</a>
+                </div>
+            </div>
+            
+            
+            <table style="margin-left: 30%; margin-bottom: 5%;"> 
+                <caption>
+                    Teams für die er Gespielt hatte
+                </caption>
+                <tr >
+                    <th >Jahr</th>
+                    <th >Team</th>
+                    <th >Nummer</th>
+                    <th >Position</th>
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2013/2014</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td   data-cell="Season">2014/2015</td> <!--Season-->
+                    <td   data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td   data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td   data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2015/2016</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2016/2017</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2017/2018</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2018/2019</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2020/2021</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2021/2022</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+
+                <tr>
+                    <td  data-cell="Season">2023/2024</td> <!--Season-->
+                    <td  data-cell="Team">Golden State Warriors</td> <!--Team-->
+                    <td  data-cell="Nummer">30</td> <!-- Getragene Nummer-->
+                    <td  data-cell="Spielerposition">Point Guard</td> <!--Spielerposition-->
+                </tr>
+                
+            </table>
+        </div>
+
+        <div id="erklaerungVonDenBegriffen" class="erklaerungVonDenBegriffen"> <!--Damit es auch für Laien verständlich wird-->
+            <h3>Legende</h3>
+            <ul>
+            <li><p>GP = Games Played</p></li>
+            <li><p>Min = Minutes Per Game</p> </li>
+            <li><p>FG = Field Goals Made-</p> </li>
+            <li><p>FG% = Field Goal Percentage</p> </li>
+            <div class="erklaerungVonDenBegriffenPartZwei">
+            <li><p>3PT = Three Point Field Goals Made</p></li>
+            <li><p>3PT% = Three Pointer Percentage</p> </li>
+            <li><p>FT = Free Throws</p></li>
+            <li><p>FT% = Free Throw Percentage</p></li>
+            <li><p>Reb = Rebounds Per Game</p></li>
+        </ul>
+        </div>
+        </div>
+
+        <div class="wurfqouteAnzeigen" id="wurfqouteAnzeigen"> <!--Bild von seinen Wurfspots, neue Klasse für Style-->
+            <div class="dropdown">
+                <button style="margin-bottom: 16px; margin-left: 29%;" class="btn btn-secondary dropdown-toggle" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tabellenauswahl</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="statistikSpielerAnzeigen()">Statistik</a>
+                    <a class="dropdown-item" onclick="teamsAnzeigen()">Teams</a>
+                    <a class="dropdown-item" onclick="wurfqouteAnzeigen()">Wuerfe</a>
+                </div>
+            </div>
+            <img src="https://secure.espncdn.com/photo/2019/0910/CurryDecadesB.png" id="wurfQoute">
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-box">
+            <a href="#top" class="hochZuAnfang" id="hochZuAnfang">Hoch zur Seite</a>
+            <p>All rights reserved 2023 Stephen Curry Fanpage ™</p><!--Damit alles sicher und rechtlich bleibt und ich nicht von ihnen angeklagt werde :(-->
+            <p>Powered by Eduard</p> <!-- ;) -->
+        </div>
+    </footer>
+</body>
+
+</html>

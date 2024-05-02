@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.logo  /*Größe von Logo*/{
+    width: 120px;
+}
+
+.navbar  /*Größe und soweiter für die Nav*/{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-main   /*Hintergrund von Nav einstellen*/ {
+    background-color: black;
+}
+
+
+.navbar ul li /*Listelementen einen Style geben*/{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    background-color: black;
+}
+
+.navbar ul li a /*Font, für alle elemente die man anklicken kann usw einstellen*/{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li::after /*Für die Unterlinie*/ {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(88, 88, 88);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar a /*Transistion damit es smooth wird und damit es grau bleibt*/ {
+    color: rgba(255, 255, 255, 0.575);
+    transition: color 0.5s ease; 
+}
+
+.navbar a:hover /*Nach dem hover schwarz damit man merkt dass man was ausgewählt hat*/ {
+    color: #ffffffa9;
+}
+
+.navbar ul li:hover::after /*Damit die Unterlinie komplett ausgebreitet wird*/{
+    width: 100%;
+}
+
+.navbar .nav-selected /*Um den User anzuzeigen wo er drauf ist*/ {
+    color: white;
+}
